@@ -7,8 +7,6 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <meta name="author" content="mauwii">
-      
       
         <link rel="canonical" href="https://lstein.github.io/stable-diffusion/features/UPSCALE/">
       
@@ -55,7 +53,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
   
     
     
@@ -67,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#intro" class="md-skip">
+        <a href="#gfpgan-and-real-esrgan-support" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +109,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
@@ -120,7 +118,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="dark-blue" data-md-color-accent="white"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
@@ -169,7 +167,7 @@
         <a href="https://github.com/lstein/stable-diffusion" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     lstein/stable-diffusion
@@ -199,7 +197,9 @@
                     
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Dream Script Docs" class="md-nav__button md-logo" aria-label="Dream Script Docs" data-md-component="logo">
       
@@ -214,7 +214,7 @@
       <a href="https://github.com/lstein/stable-diffusion" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     lstein/stable-diffusion
@@ -245,21 +245,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../../CHANGELOG/" class="md-nav__link">
-        **Changelog**
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -267,18 +252,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3">
+        <label class="md-nav__link" for="__nav_2">
           Features
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Features" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Features
         </label>
@@ -319,7 +304,7 @@
   
     <li class="md-nav__item">
       <a href="../EMBIGGEN/" class="md-nav__link">
-        Embiggen
+        **Embiggen -- upscale your images on limited memory machines**
       </a>
     </li>
   
@@ -362,34 +347,6 @@
     <li class="md-nav__item">
       <a href="../OTHER/" class="md-nav__link">
         Others
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../OUTPAINTING/" class="md-nav__link">
-        Outpainting
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PROMPTS/" class="md-nav__link">
-        Prompting Features
       </a>
     </li>
   
@@ -446,15 +403,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#face-fixing" class="md-nav__link">
-    Face Fixing
+  <a href="#gfpgan-and-real-esrgan-support" class="md-nav__link">
+    GFPGAN and Real-ESRGAN Support
   </a>
   
 </li>
@@ -488,49 +438,9 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#codeformer-support" class="md-nav__link">
-    CodeFormer Support
-  </a>
-  
-    <nav class="md-nav" aria-label="CodeFormer Support">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
-  <a href="#usage_1" class="md-nav__link">
-    Usage:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-options" class="md-nav__link">
-    Other Options:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fixing-previously-generated-images" class="md-nav__link">
-    Fixing Previously-Generated Images
-  </a>
-  
-    <nav class="md-nav" aria-label="Fixing Previously-Generated Images">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#disabling" class="md-nav__link">
-    Disabling:
+  <a href="#note" class="md-nav__link">
+    Note
   </a>
   
 </li>
@@ -594,36 +504,22 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_3">
           Help
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Help" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Help
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../help/SAMPLER_CONVERGENCE/" class="md-nav__link">
-        SAMPLER CONVERGENCE
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -656,36 +552,22 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_4">
           Installation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Installation" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Installation
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../installation/INSTALL_DOCKER/" class="md-nav__link">
-        Before you begin
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -746,18 +628,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_5">
           Other
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Other" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Other
         </label>
@@ -804,125 +686,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
-    Intro
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#face-fixing" class="md-nav__link">
-    Face Fixing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#upscaling" class="md-nav__link">
-    Upscaling
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#face-restoration" class="md-nav__link">
-    Face Restoration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
-    Example Usage
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#codeformer-support" class="md-nav__link">
-    CodeFormer Support
-  </a>
-  
-    <nav class="md-nav" aria-label="CodeFormer Support">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#usage_1" class="md-nav__link">
-    Usage:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-options" class="md-nav__link">
-    Other Options:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fixing-previously-generated-images" class="md-nav__link">
-    Fixing Previously-Generated Images
-  </a>
-  
-    <nav class="md-nav" aria-label="Fixing Previously-Generated Images">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#disabling" class="md-nav__link">
-    Disabling:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -936,75 +699,60 @@
 
   <h1>Upscale</h1>
 
-<h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">#</a></h2>
-<p>The script provides the ability to restore faces and upscale. You can apply
-these operations at the time you generate the images, or at any time to a
-previously-generated PNG file, using the
-<a href="#fixing-previously-generated-images">!fix</a> command.</p>
-<h2 id="face-fixing">Face Fixing<a class="headerlink" href="#face-fixing" title="Permanent link">#</a></h2>
-<p>The default face restoration module is GFPGAN. The default upscale is
-Real-ESRGAN. For an alternative face restoration module, see [CodeFormer
-Support] below.</p>
-<p>As of version 1.14, environment.yaml will install the Real-ESRGAN package into
-the standard install location for python packages, and will put GFPGAN into a
-subdirectory of "src" in the InvokeAI directory. (The reason for this is
-that the standard GFPGAN distribution has a minor bug that adversely affects
-image color.) Upscaling with Real-ESRGAN should "just work" without further
-intervention. Simply pass the --upscale (-U) option on the dream&gt; command line,
-or indicate the desired scale on the popup in the Web GUI.</p>
-<p>For <strong>GFPGAN</strong> to work, there is one additional step needed. You will need to
-download and copy the GFPGAN
-<a href="https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth">models file</a>
-into <strong>src/gfpgan/experiments/pretrained_models</strong>. On Mac and Linux systems,
-here's how you'd do it using <strong>wget</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>&gt; wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth src/gfpgan/experiments/pretrained_models/
+<h2 id="gfpgan-and-real-esrgan-support"><strong>GFPGAN and Real-ESRGAN Support</strong><a class="headerlink" href="#gfpgan-and-real-esrgan-support" title="Permanent link">#</a></h2>
+<p>The script also provides the ability to do face restoration and upscaling with the help of GFPGAN
+and Real-ESRGAN respectively.</p>
+<p>As of version 1.14, environment.yaml will install the Real-ESRGAN package into the standard install
+location for python packages, and will put GFPGAN into a subdirectory of "src" in the
+stable-diffusion directory. (The reason for this is that the standard GFPGAN distribution has a
+minor bug that adversely affects image color.) Upscaling with Real-ESRGAN should "just work" without
+further intervention. Simply pass the --upscale (-U) option on the dream&gt; command line, or indicate
+the desired scale on the popup in the Web GUI.</p>
+<p>For <strong>GFPGAN</strong> to work, there is one additional step needed. You will need to download and copy the
+GFPGAN <a href="https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth">models file</a>
+into <strong>src/gfpgan/experiments/pretrained_models</strong>. On Mac and Linux systems, here's how you'd do it
+using <strong>wget</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>&gt; wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth src/gfpgan/experiments/pretrained_models/
 </code></pre></div>
-<p>Make sure that you're in the InvokeAI directory when you do this.</p>
-<p>Alternatively, if you have GFPGAN installed elsewhere, or if you are using an
-earlier version of this package which asked you to install GFPGAN in a sibling
-directory, you may use the <code>--gfpgan_dir</code> argument with <code>dream.py</code> to set a
-custom path to your GFPGAN directory. <em>There are other GFPGAN related boot
-arguments if you wish to customize further.</em></p>
-<div class="admonition warning">
-<p class="admonition-title">Internet connection needed</p>
-<p>Users whose GPU machines are isolated from the Internet (e.g.
+<p>Make sure that you're in the stable-diffusion directory when you do this.</p>
+<p>Alternatively, if you have GFPGAN installed elsewhere, or if you are using an earlier version of
+this package which asked you to install GFPGAN in a sibling directory, you may use the
+<code>--gfpgan_dir</code> argument with <code>dream.py</code> to set a custom path to your GFPGAN directory. <em>There are
+other GFPGAN related boot arguments if you wish to customize further.</em></p>
+<p><strong>Note: Internet connection needed:</strong> Users whose GPU machines are isolated from the Internet (e.g.
 on a University cluster) should be aware that the first time you run dream.py with GFPGAN and
 Real-ESRGAN turned on, it will try to download model files from the Internet. To rectify this, you
 may run <code>python3 scripts/preload_models.py</code> after you have installed GFPGAN and all its
 dependencies.</p>
-</div>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
+<h2 id="usage"><strong>Usage</strong><a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
 <p>You will now have access to two new prompt arguments.</p>
-<h3 id="upscaling">Upscaling<a class="headerlink" href="#upscaling" title="Permanent link">#</a></h3>
+<h3 id="upscaling"><strong>Upscaling</strong><a class="headerlink" href="#upscaling" title="Permanent link">#</a></h3>
 <p><code>-U : &lt;upscaling_factor&gt; &lt;upscaling_strength&gt;</code></p>
-<p>The upscaling prompt argument takes two values. The first value is a scaling
-factor and should be set to either <code>2</code> or <code>4</code> only. This will either scale the
-image 2x or 4x respectively using different models.</p>
-<p>You can set the scaling stength between <code>0</code> and <code>1.0</code> to control intensity of
-the of the scaling. This is handy because AI upscalers generally tend to smooth
-out texture details. If you wish to retain some of those for natural looking
-results, we recommend using values between <code>0.5 to 0.8</code>.</p>
+<p>The upscaling prompt argument takes two values. The first value is a scaling factor and should be
+set to either <code>2</code> or <code>4</code> only. This will either scale the image 2x or 4x respectively using
+different models.</p>
+<p>You can set the scaling stength between <code>0</code> and <code>1.0</code> to control intensity of the of the scaling.
+This is handy because AI upscalers generally tend to smooth out texture details. If you wish to
+retain some of those for natural looking results, we recommend using values between <code>0.5 to 0.8</code>.</p>
 <p>If you do not explicitly specify an upscaling_strength, it will default to 0.75.</p>
-<h3 id="face-restoration">Face Restoration<a class="headerlink" href="#face-restoration" title="Permanent link">#</a></h3>
+<h3 id="face-restoration"><strong>Face Restoration</strong><a class="headerlink" href="#face-restoration" title="Permanent link">#</a></h3>
 <p><code>-G : &lt;gfpgan_strength&gt;</code></p>
-<p>This prompt argument controls the strength of the face restoration that is being
-applied. Similar to upscaling, values between <code>0.5 to 0.8</code> are recommended.</p>
-<p>You can use either one or both without any conflicts. In cases where you use
-both, the image will be first upscaled and then the face restoration process
-will be executed to ensure you get the highest quality facial features.</p>
+<p>This prompt argument controls the strength of the face restoration that is being applied. Similar to
+upscaling, values between <code>0.5 to 0.8</code> are recommended.</p>
+<p>You can use either one or both without any conflicts. In cases where you use both, the image will be
+first upscaled and then the face restoration process will be executed to ensure you get the highest
+quality facial features.</p>
 <p><code>--save_orig</code></p>
-<p>When you use either <code>-U</code> or <code>-G</code>, the final result you get is upscaled or face
-modified. If you want to save the original Stable Diffusion generation, you can
-use the <code>-save_orig</code> prompt argument to save the original unaffected version
-too.</p>
-<h3 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">#</a></h3>
+<p>When you use either <code>-U</code> or <code>-G</code>, the final result you get is upscaled or face modified. If you want
+to save the original Stable Diffusion generation, you can use the <code>-save_orig</code> prompt argument to
+save the original unaffected version too.</p>
+<h3 id="example-usage"><strong>Example Usage</strong><a class="headerlink" href="#example-usage" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>dream&gt; superman dancing with a panda bear -U <span class="m">2</span> <span class="m">0</span>.6 -G <span class="m">0</span>.4
 </code></pre></div>
 <p>This also works with img2img:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>dream&gt; a man wearing a pineapple hat -I path/to/your/file.png -U <span class="m">2</span> <span class="m">0</span>.5 -G <span class="m">0</span>.6
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<h3 id="note"><strong>Note</strong><a class="headerlink" href="#note" title="Permanent link">#</a></h3>
 <p>GFPGAN and Real-ESRGAN are both memory intensive. In order to avoid crashes and memory overloads
 during the Stable Diffusion process, these effects are applied after Stable Diffusion has completed
 its work.</p>
@@ -1012,67 +760,16 @@ its work.</p>
 iterations, the images will first be generated and then upscaled and face restored after that
 process is complete. While the image generation is taking place, you will still be able to preview
 the base images.</p>
-</div>
-<p>If you wish to stop during the image generation but want to upscale or face
-restore a particular generated image, pass it again with the same prompt and
-generated seed along with the <code>-U</code> and <code>-G</code> prompt arguments to perform those
-actions.</p>
-<h2 id="codeformer-support">CodeFormer Support<a class="headerlink" href="#codeformer-support" title="Permanent link">#</a></h2>
-<p>This repo also allows you to perform face restoration using
-<a href="https://github.com/sczhou/CodeFormer">CodeFormer</a>.</p>
-<p>In order to setup CodeFormer to work, you need to download the models like with
-GFPGAN. You can do this either by running <code>preload_models.py</code> or by manually
-downloading the
-<a href="https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth">model file</a>
-and saving it to <code>ldm/restoration/codeformer/weights</code> folder.</p>
-<p>You can use <code>-ft</code> prompt argument to swap between CodeFormer and the default
-GFPGAN. The above mentioned <code>-G</code> prompt argument will allow you to control the
-strength of the restoration effect.</p>
-<h3 id="usage_1">Usage:<a class="headerlink" href="#usage_1" title="Permanent link">#</a></h3>
-<p>The following command will perform face restoration with CodeFormer instead of
-the default gfpgan.</p>
-<p><code>&lt;prompt&gt; -G 0.8 -ft codeformer</code></p>
-<h3 id="other-options">Other Options:<a class="headerlink" href="#other-options" title="Permanent link">#</a></h3>
-<ul>
-<li><code>-cf</code> - cf or CodeFormer Fidelity takes values between <code>0</code> and <code>1</code>. 0 produces
-  high quality results but low accuracy and 1 produces lower quality results but
-  higher accuacy to your original face.</li>
-</ul>
-<p>The following command will perform face restoration with CodeFormer. CodeFormer
-will output a result that is closely matching to the input face.</p>
-<p><code>&lt;prompt&gt; -G 1.0 -ft codeformer -cf 0.9</code></p>
-<p>The following command will perform face restoration with CodeFormer. CodeFormer
-will output a result that is the best restoration possible. This may deviate
-slightly from the original face. This is an excellent option to use in
-situations when there is very little facial data to work with.</p>
-<p><code>&lt;prompt&gt; -G 1.0 -ft codeformer -cf 0.1</code></p>
-<h2 id="fixing-previously-generated-images">Fixing Previously-Generated Images<a class="headerlink" href="#fixing-previously-generated-images" title="Permanent link">#</a></h2>
-<p>It is easy to apply face restoration and/or upscaling to any
-previously-generated file. Just use the syntax
-<code>!fix path/to/file.png &lt;options&gt;</code>. For example, to apply GFPGAN at strength 0.8
-and upscale 2X for a file named <code>./outputs/img-samples/000044.2945021133.png</code>,
-just run:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>dream&gt; !fix ./outputs/img-samples/000044.2945021133.png -G 0.8 -U 2
-</code></pre></div>
-<p>A new file named <code>000044.2945021133.fixed.png</code> will be created in the output
-directory. Note that the <code>!fix</code> command does not replace the original file,
-unlike the behavior at generate time.</p>
-<h3 id="disabling">Disabling:<a class="headerlink" href="#disabling" title="Permanent link">#</a></h3>
-<p>If, for some reason, you do not wish to load the GFPGAN and/or ESRGAN libraries,
-you can disable them on the dream.py command line with the <code>--no_restore</code> and
-<code>--no_upscale</code> options, respectively.</p>
+<p>If you wish to stop during the image generation but want to upscale or face restore a particular
+generated image, pass it again with the same prompt and generated seed along with the <code>-U</code> and <code>-G</code>
+prompt arguments to perform those actions.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 27, 2022</span>
-      
-        <br>
-        Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2022</span>
-      
+      2022-09-16
     
   </small>
 </div>
@@ -1145,7 +842,7 @@ you can disable them on the dream.py command line with the <code>--no_restore</c
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.748e2769.min.js"></script>
